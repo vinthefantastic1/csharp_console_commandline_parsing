@@ -50,6 +50,18 @@ namespace ConsoleReadNumbers
 
             string myPRINT(string myarg1, string myarg2)
             {
+                //return $"{myarg1.CompareTo(myarg2)}";
+
+                if (myarg1.CompareTo( myarg2)>0)
+                {
+                   return $"{myarg1} > {myarg2}";
+                }
+
+                if (myarg1.CompareTo(myarg2) < 0)
+                {
+                    return $"{myarg1} < {myarg2}";
+                }
+
                 return $"values entered were {myarg1} and {myarg2}";
             }
            
